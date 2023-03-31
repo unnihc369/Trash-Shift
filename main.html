@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Trash Managment System</title>
+    
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <!-- my adding -->
+        <div class="profileImage nav__item">
+          <i class="ri-account-circle-fill"id="click"></i>
+        </div>
+        <a href="#" class="nav__logo">Trash-Shift</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#discover" class="nav__link">Discover</a>
+            </li>
+          </ul>
+
+          <div class="nav__dark">
+            <!-- Theme change button -->
+            <span class="change-theme-name">Dark mode</span>
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+          </div>
+
+          <i class="ri-close-line nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-function-line"></i>
+        </div>
+      </nav>
+
+<!-- my adding -->
+      <div class="profile hidden">
+        <div id="close"><i class="ri-close-fill"></i></div>
+        <p class="he">Name :-  <span id="pName">Praveen</span> </p>
+        <p  class="he">Phone number :-  <span id="pphone">7892626547</span> </p>
+        <p  class="he">email :-  <span id="pemail">Praveeen@gmail.com</span> </p>
+        <p  class="he">adress :- <span id="padress">mogavallli, k.r circle.bangalore</span> </p>
+      </div>
+  
+    </header>
+    
+    <!-- popup done by praveen -->
+    <div class="overlay hidden"></div>
+   <div class="popUpSHow hidden">
+     <p><i class="ri-close-fill" id="popUpClose" ></i></p>
+     <h1 id="popName">Praveen Kumar  G</h1>
+     <p>Your information Successfully Updated ✅</p>
+     <!-- popup end -->
+
+
+
+    </div>
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <img src="assets/img/home1.jpg" alt="" class="home__img" />
+
+        <div class="home__container container grid">
+          <div class="home__data">
+            <span class="home__data-subtitle">Discover the Trash</span>
+              <h1 class="home__data-title">Think before you trash:  <br> recycle and <b> <br>  make a difference</b></h1>
+            </h1>
+            <a href="#" class="button">Explore</a>
+          </div>
+
+          <div class="home__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-facebook-box-fill"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-twitter-fill"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+                        <h2 class="section__title about__title">More Information <br> Update your Waste </h2>
+                        <p class="about__description">Effective trash management is crucial for a sustainable future. Every individual effort counts, and we must take the necessary steps to take care of our environment. We can start by reducing, reusing, and recycling waste.
+                        </p>
+                        <a href="#" class="button">Add Amount</a>
+                        <a href="#" class="button">Delete Amount</a>
+
+                    </div>
+
+          <div class="about__img">
+            <div class="about__img-overlay" >
+                <img src="./assets/img/biodegradable.jpg" alt="biodegradable" class="image_round" >
+
+
+                <div class="about__img-overlay_info">
+                    <i class="ri-add-circle-line"></i>
+                     <p class="number_count">0</p>
+                    <i class="ri-indeterminate-circle-line minus"></i>
+                  </div>
+                  
+                  <a href="#manage.html" id="submit-1" class="submit_anwser button">submit</a>
+            </div>
+
+
+            <div class="about__img-overlay">
+                <img src="./assets/img/non_biodegradable.jpg" alt="non_biodegradable" class="image_round">
+                  <div class="about__img-overlay_info">
+                    <i class="ri-add-circle-line"></i>
+                     <p class="number_count">0</p>
+                    <i class="ri-indeterminate-circle-line minus"></i>
+                  </div>
+                  <a href="#manage.html" id="submit-2" class="submit_anwser button">submit</a>
+            </div>
+        </div>
+        </div>
+        
+      </section>
+
+     
+
+      <!--==================== DISCOVER ====================-->
+      <section class="discover section" id="discover">
+        <h2 class="section__title">Join us in creating a cleaner and greener world  <br>by managing your waste responsibly </h2>
+
+        <div class="discover__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== DISCOVER 1 ====================-->
+            <div class="discover__card swiper-slide">
+              <img
+                src="assets/img/download (3).jpg"
+                alt=""
+                class="discover__img"
+              />
+              
+            </div>
+
+            <!--==================== DISCOVER 2 ====================-->
+            <div class="discover__card swiper-slide">
+              <img
+                src="assets/img/download (4).jpg"
+                alt=""
+                class="discover__img"
+              />
+              
+            </div>
+
+            <!--==================== DISCOVER 3 ====================-->
+            <div class="discover__card swiper-slide">
+                            <img src="assets/img/download (5).jpg" alt="" class="discover__img">
+                            
+                        </div>
+
+            <!--==================== DISCOVER 4 ====================-->
+            <div class="discover__card swiper-slide">
+              <img
+                src="assets/img/download (6).jpg"
+                alt=""
+                class="discover__img"
+              />
+              <div class="discover__data">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <!--==================== EXPERIENCE ====================-->
+      <section class="experience section">
+        <h2 class="section__title">
+          With Our Experience <br> We Will Save Earth</h2>
+
+        <div class="experience__container container grid">
+          <div class="experience__content grid">
+            <div class="experience__data">
+              <h2 class="experience__number">10</h2>
+              <span class="experience__description"
+                >Year <br />
+                Experience</span
+              >
+            </div>
+
+            <div class="experience__data">
+              <h2 class="experience__number">750</h2>
+              <span class="experience__description"
+                >Happy<br />
+                Users</span
+              >
+            </div>
+
+            <div class="experience__data">
+              <h2 class="experience__number">650+</h2>
+              <span class="experience__description"
+                >Tonnes <br />
+                Waste Disposed</span
+              >
+            </div>
+          </div>
+
+          <div class="experience__img grid">
+            <div class="experience__overlay">
+              <img
+                src="assets/img/experience1.jpg"
+                alt=""
+                class="experience__img-one"
+              />
+            </div>
+
+            <div class="experience__overlay">
+              <img
+                src="assets/img/experience2.jpg"
+                alt=""
+                class="experience__img-two"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== VIDEO ====================-->
+      <section class="video section">
+        <h2 class="section__title">Follow The Green</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Nature is essential for our survival, and protecting it is crucial for our well-being. By effectively managing protected areas, we can help drive global recovery from pandemics and make a real difference in a host of other environmental issues
+                    </p>
+
+          <div class="video__content">
+            <video id="video-file">
+              <source src="assets/video/video.mp4" type="video/mp4" />
+            </video>
+
+            <button class="button button--flex video__button" id="video-button">
+              <i class="ri-play-line video__button-icon" id="video-icon"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SUBSCRIBE ====================-->
+      <section class="subscribe section">
+        <div class="subscribe__bg">
+          <div class="subscribe__container container">
+            <h2 class="section__title subscribe__title">
+              Subscribe Our <br />
+              Newsletter
+            </h2>
+            <p class="subscribe__description">
+              Subscribe to our newsletter and 
+            </p>
+
+            <form action="" class="subscribe__form">
+              <input
+                type="text"
+                placeholder="Enter email"
+                class="subscribe__input"
+              />
+
+              <button class="button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SPONSORS ====================-->
+      <section class="sponsor section">
+        <div class="sponsor__container container grid">
+          <div class="sponsor__content">
+            <img src="assets/img/sponsors1.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content">
+            <img src="assets/img/sponsors2.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content">
+            <img src="assets/img/sponsors3.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content">
+            <img src="assets/img/sponsors4.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content">
+            <img src="assets/img/sponsors5.png" alt="" class="sponsor__img" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div class="footer__data">
+            <h3 class="footer__title">Trash Analysis</h3>
+            <p class="footer__description">
+              Contribute to the<br />
+              cause, we offer you the <br />
+              experience.
+            </p>
+            <div>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-facebook-box-fill"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="ri-youtube-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">About</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Features</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">New & Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">Company</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="" class="footer__link">Team</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Become a Sponsor</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Become a member</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__data">
+            <h3 class="footer__subtitle">Support</h3>
+            <ul>
+              <li class="footer__item">
+                <a href="" class="footer__link">FAQs</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Support Center</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__rights">
+          <p class="footer__copy">&#169; Team Warriors. All rigths reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script  src="assets/js/main.js"></script>
+    <script  src="userInfo.js"></script>
+   
+   
+  </body>
+</html>

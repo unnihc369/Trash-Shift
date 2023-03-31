@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+
+    </header>
+
+    <!-- container div -->
+    <div class="container">
+
+        <!-- upper button section to select
+             the login or signup form -->
+        <div class="slider"></div>
+        <div class="btn">
+            <button class="login">Login</button>
+            <button class="signup">Signup</button>
+        </div>
+
+        <!-- Form section that contains the
+             login and the signup form -->
+        <div class="form-section">
+
+            <!-- login form -->
+            <div class="login-box">
+                <input type="email" class="email ele" id="email-lg" placeholder="youremail@email.com">
+                <input type="password" class="password ele" id="password-lg" placeholder="password">
+                <button class="clkbtn submit-btn" onclick="loin()">Login</button>
+            </div>
+
+            <!-- signup form -->
+            <div class="signup-box">
+
+
+                <input type="text" class="email ele" id="name-su" placeholder="Name" />
+                <input type="email" class="email ele" id="email-su" placeholder="youremail@email.com">
+                <input type="number" class="email ele" id="phone-su" placeholder="Phone Number" />
+                <input type="password" class="password ele" id="password-su" placeholder="password">
+                <input type="password" class="password ele" id="repassword-su" placeholder="Re-password">
+                <textarea class="email ele" placeholder="Address" id="address-su"></textarea>
+                <button class="clkbtn submit-btn-su" onclick="register()">Signup</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!--Script-->
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script src="index.js"></script>
+
+</html>

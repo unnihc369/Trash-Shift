@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>management page</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./manage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    .form {
+      position: absolute;
+      top: 30%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+      width: 400px;
+      background-color: yellow;
+      border-radius: 10px;
+    }
+
+    .input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      border-radius: 10px 10px 0 0;
+      border: none;
+      font-size: 20px;
+      font-family: cursive;
+    }
+
+    .input::placeholder {
+      color: lightgray;
+    }
+
+    .list {
+      padding: 0;
+      margin: 0;
+    }
+
+    .list li {
+      list-style-type: none;
+      padding: 20px;
+      font-family: cursive;
+      border-top: dotted;
+      border-color: darkgray;
+      position: relative;
+    }
+
+    .list li .fa-trash {
+      color: red;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .list li .fa-check-square {
+      color: green;
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .list li.checked {
+      color: darkgray;
+      text-decoration: line-through;
+    }
+
+    .list li.checked .fa-check-square {
+      color: darkgray;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Travel</a>
+    </nav>
+  </header>
+  <section class="section1">
+    <div class="section-1-div">
+      <p>
+        " Cleaning anything involves making something else dirty, but anything
+        can get dirty without something else getting clean "
+      </p>
+
+      <a href="#section-2" class="button work">Today work</a>
+    </div>
+    <img src="./image-4.jpg" alt="cleanig images" />
+  </section>
+
+  <h1 class="heading">Today Collection </h1>
+  <section class="section2" id="section-2">
+    <div class="info">
+
+    </div>
+  </section>
+
+  <div id="closeALLDIV">
+    <button id="closeALL" class="button">close Work</button>
+  </div>
+
+
+  <script src="./manage.js"></script>
+</body>
+
+</html>
