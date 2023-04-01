@@ -144,7 +144,7 @@ header {
 
     @media screen and (max-width: 650px) {
         .container {
-            height: 500px;
+            height: 600px;
             width: 300px;
         }
 
@@ -203,7 +203,7 @@ header {
 
     @media screen and (max-width: 320px) {
         .container {
-            height: 500px;
+            height: 600px;
             width: 250px;
         }
 
